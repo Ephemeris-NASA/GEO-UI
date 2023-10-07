@@ -95,9 +95,14 @@ function App() {
             )}
         </div>
             {images.length > 0 && (
-                <div className="button-block">
-                    <button onClick={downloadImages} className="button-3" >Download images</button>
-                </div>
+                <>
+                    <div className="button-block">
+                        <button onClick={downloadImages} className="button-3" >Download images</button>
+                    </div>
+                    { images.map(item =>
+                        <a href={item} >{item}</a>
+                    )}
+                </>
             )}
     </div>
   );
