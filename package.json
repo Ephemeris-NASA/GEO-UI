@@ -1,8 +1,10 @@
 {
   "name": "nasa-geo",
   "version": "0.1.0",
+  "proxy": "http://localhost:3000/",
   "private": true,
   "dependencies": {
+    "@react-google-maps/api": "^2.19.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,11 +12,16 @@
     "@types/node": "^16.18.57",
     "@types/react": "^18.2.25",
     "@types/react-dom": "^18.2.10",
+    "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-multi-date-picker": "^4.3.3",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.7",
     "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
