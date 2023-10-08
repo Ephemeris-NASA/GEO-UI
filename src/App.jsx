@@ -4,6 +4,9 @@ import DatePicker, { DateObject } from "react-multi-date-picker"
 import './App.css';
 import MapComponent from "./map";
 import SatellitesComponent from "./satelites";
+import forest from './assets/images/chip_077_612_forest_nonforest.png';
+import forestW from './assets/images/chip_077_612_forest_nonforest_w.png';
+import forestDiff from './assets/images/forest_diff.png';
 
 function App() {
     const [satellite, setSatellite] = useState('')
@@ -84,7 +87,7 @@ function App() {
             {images.length > 0 && (
                 <>
                     <div className="button-block">
-                        <button onClick={downloadImages} className="button-3" >Download images</button>
+                        <button onClick={downloadImages} className="button-3" >Download images for analyze</button>
                     </div>
                     <div className="links-block">
                         { images.map(item =>
@@ -92,6 +95,24 @@ function App() {
                         )}
                     </div>
                 </>
+            )}
+        {images.length > 0 && (
+        <div className="results">
+            <h4>Difference in forest square calculated by ML model (Example result)</h4>
+            <div>
+                <h5>Image1</h5>
+                <img src={forest} alt=""/>
+            </div>
+            <div>
+                <h5>Image2</h5>
+                <img src={forestW} alt=""/>
+            </div>
+            <div>
+                <h5>Difference</h5>
+                <img src={forestDiff} alt=""/>
+            </div>
+            <h3>Forest square reduce is approximately 22.60%.</h3>
+        </div>
             )}
     </div>
   );

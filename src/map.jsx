@@ -22,8 +22,8 @@ const MapComponent = ({ setMarkerPosition }) => {
     };
 
     const defaultCenter = {
-        lat: 50.45,
-        lng: 30.53,
+        lat: 44.9645575,
+        lng: -73.5624471,
     }
     const [center, setCenter] = useState(defaultCenter);
 
