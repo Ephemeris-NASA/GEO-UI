@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Green Eye UI: Forest Monitoring Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the **Green Eye UI** project — the visual gateway to real-time global forest monitoring.
+
+As the world becomes increasingly digital, the need for intuitive, interactive, and user-friendly platforms to visualize complex data is paramount. Our forests, often referred to as the lungs of our planet, are undergoing rapid changes. Tracking these changes is no longer a luxury but a necessity. The **Green Eye UI** serves as that interactive lens, presenting a global view of forest dynamics right at your fingertips.
+
+![UI](./public/ui.jpeg)
+
+## Features:
+
+- **Interactive Maps**: Dive deep into regions, view forest alterations, and observe patterns with high-resolution imagery.
+- **Real-time Data Visualization**: Harness the power of up-to-the-minute data, seamlessly fetched and displayed.
+
+- **Predictive Analysis Interface**: Get insights into potential future forest shifts based on historical data and sophisticated predictive models.
+
+- **User Customization**: Tailor your experience. Set alerts, mark areas of interest, and interact with the platform in a way that serves your unique needs.
+
+- **Integration with Main AI Model**: Directly linked with our state-of-the-art AI model, ensuring accurate, fast, and actionable insights.
+
+Be it policymakers, environmentalists, or curious individuals, the **Green Eye UI** is crafted for all, ensuring that the story of our forests is not just told, but experienced. Dive in, explore, and let's together champion the cause of our planet's green cover.
 
 ## Available Scripts
 
