@@ -1,7 +1,7 @@
 {
   "name": "nasa-geo",
   "version": "0.1.0",
-  "proxy": "http://localhost:3000/",
+  "proxy": "https://data.lpdaac.earthdatacloud.nasa.gov/",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.19.2",

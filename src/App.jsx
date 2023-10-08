@@ -36,25 +36,12 @@ function App() {
 
     //TODO problem with cors, need to use server for this action
     const downloadImages = useCallback(async () => {
-        let link = document.createElement("a");
-        document.documentElement.append(link);
-
-        for (let i = 0; i < images.length; i++) {
-            await fetch(images[i])
-                .then(res => res.blob())
-                .then(blob => {
-
-                    let objectURL = URL.createObjectURL(blob);
-
-                    // Set the download name and href
-                    link.setAttribute("download", `image_${i}.tiff`);
-                    link.href = objectURL;
-
-                    // Auto click the link
-                    link.click();
-                })
+        const links = document.getElementsByClassName('links');
+        console.log(links)
+        for (let item of links) {
+            window.open(item.href);
         }
-    }, [images])
+    }, [])
 
     const buttonEnabled = useMemo(() => satellite && marker.length && dates.length, [satellite, marker, dates])
 
@@ -99,9 +86,11 @@ function App() {
                     <div className="button-block">
                         <button onClick={downloadImages} className="button-3" >Download images</button>
                     </div>
-                    { images.map(item =>
-                        <a href={item} >{item}</a>
-                    )}
+                    <div className="links-block">
+                        { images.map(item =>
+                            <a href={item} download={item} className="links">{item}</a>
+                        )}
+                    </div>
                 </>
             )}
     </div>
